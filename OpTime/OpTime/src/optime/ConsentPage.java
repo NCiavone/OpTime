@@ -21,7 +21,7 @@ public class ConsentPage implements ActionListener{
     private static JButton yesBtn;
     private static JButton noBtn;
     
-    OpTime ot = new OpTime(); //Instance of John's class
+//     OpTime ot = new OpTime(); //Instance of John's class
     
     
     
@@ -72,7 +72,7 @@ public class ConsentPage implements ActionListener{
         
         //Takes user to next page of the app if clicked "Allow"
         if(e.getSource()==yesBtn){
-            ot.setVisible(true);
+//             ot.setVisible(true);
             
             /*
             STILL NEED TO DO:
