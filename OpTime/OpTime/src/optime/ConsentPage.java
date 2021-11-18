@@ -1,5 +1,5 @@
 
-package OpTime;
+package optime;
 
 import java.awt.Color;
 import java.awt.Font;
