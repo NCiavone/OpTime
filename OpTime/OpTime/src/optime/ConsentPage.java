@@ -12,7 +12,7 @@ import javax.swing.*;
  * @author Kyler
  */
 
-public class ConsentPage implements ActionListener{
+public class ConsentPage extends JFrame implements ActionListener{
     
     final static int WIDTH = 500;
     final static int HEIGHT = 500;
@@ -21,7 +21,6 @@ public class ConsentPage implements ActionListener{
     private static JButton yesBtn;
     private static JButton noBtn;
     
-//     OpTime ot = new OpTime(); //Instance of John's class
     
     
     
@@ -72,7 +71,9 @@ public class ConsentPage implements ActionListener{
         
         //Takes user to next page of the app if clicked "Allow"
         if(e.getSource()==yesBtn){
-//             ot.setVisible(true);
+            OpTime ot = new OpTime();
+            ot.setVisible(true);
+            this.setVisible(false);
             
             /*
             STILL NEED TO DO:
