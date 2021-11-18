@@ -89,4 +89,4 @@ public class ConsentPage implements ActionListener{
         
     }//End actionPerformed
     
-}//End CosentPage Class
+}//End ConsentPage Class
