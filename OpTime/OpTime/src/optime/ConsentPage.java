@@ -16,8 +16,8 @@ public class ConsentPage implements ActionListener{
    
     JFrame frame;
     
-    final static int WIDTH = 500;
-    final static int HEIGHT = 500;
+    private final static int WIDTH = 500;
+    private final static int HEIGHT = 500;
     
     private static JLabel label;
     private static JButton yesBtn;
