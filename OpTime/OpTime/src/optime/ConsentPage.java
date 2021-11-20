@@ -74,7 +74,11 @@ public class ConsentPage implements ActionListener{
         //Takes user to next page of the app if clicked "Allow"
         if(e.getSource()==yesBtn){
             frame.dispose();
-            OpTime ot = new OpTime();
+           
+           /* 
+               Need to call a class to open next window
+           */
+               //OpTime ot = new OpTime();
             
             /*
             STILL NEED TO DO:
