@@ -122,4 +122,6 @@ public class OpTime implements ActionListener {
            }
        }
     }
+    
+    ConsentPage x = new ConsentPage();
 }
