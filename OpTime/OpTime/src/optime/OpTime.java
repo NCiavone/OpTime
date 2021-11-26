@@ -44,7 +44,7 @@ public class OpTime implements ActionListener {
         // TODO code application logic here
         
         
-     
+     ConsentPage x = new ConsentPage();
      
      JPanel panel = new JPanel();
      JFrame frame = new JFrame();
@@ -55,12 +55,10 @@ public class OpTime implements ActionListener {
      
      
      panel.setLayout(null);
-     
-     
-     optionList.setBounds(1500,250,100,50);
-     optionList.addActionListener(optionList);
-     panel.add(optionList);
-     
+           
+     box g = new box();
+     g.setBounds(1300, 250, 500, 250);
+     panel.add(g);
      
      UserLabel = new JLabel("OpTime");
      UserLabel.setBounds(750, 10, 500, 150);
@@ -93,35 +91,13 @@ public class OpTime implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
        
-        
+        //works on my computer but will have to change file path to get it to work on Nick's computer
        try {
-           Runtime.getRuntime().exec("explorer.exe /select, path");
+           Runtime.getRuntime().exec("explorer.exe \"C:\\Users\\John Chown\\Desktop\\optimeMain\\OpTime\\OpTime\"");
        } catch (IOException ex) {
            Logger.getLogger(OpTime.class.getName()).log(Level.SEVERE, null, ex);
        }
     }
+     
     
-    
-    public void boxActionPerformed(ActionEvent f) {
-       
-        
-       if (f.getSource() == optionList){
-           JComboBox cb = (JComboBox)f.getSource();
-           String msg = (String)cb.getSelectedItem();
-           switch (msg){
-               case "Day": lblTxt.setText("You Have Selected Day");
-                break;
-               case "Week": lblTxt.setText("You Have Selected Week");
-                break;
-               case "Month": lblTxt.setText("You have selected Month");
-                break;
-               case "Year": lblTxt.setText("You have selected Year");
-                break;
-               default: lblTxt.setText("Error");
-                      
-           }
-       }
-    }
-    
-    ConsentPage x = new ConsentPage();
 }
