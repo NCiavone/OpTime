@@ -37,6 +37,7 @@ public class ConsentPage implements ActionListener{
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setAlwaysOnTop(true);
         
         
         //JPanel
